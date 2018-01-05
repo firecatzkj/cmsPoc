@@ -5,7 +5,7 @@ from lib.core.data import target,path
 from lib.core.data import path
 from lib.core.init import initPath,initTargetInfo
 from lib.plugin.other.findweb import whatweb
-from controllor import beginTimeInfo,endTimeInfo
+from .controllor import beginTimeInfo,endTimeInfo
 
 def start():
 	beginTimeInfo()

@@ -1,4 +1,4 @@
-from datatype import AttribDict
+from .datatype import AttribDict
 
 target = AttribDict()
 path   = AttribDict()
