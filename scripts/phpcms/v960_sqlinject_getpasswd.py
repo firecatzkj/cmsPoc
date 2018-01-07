@@ -1,5 +1,6 @@
 from lib.core.data import target
 import requests,sys,urllib
+from termcolor import cprint
 def poc():
 	try:
 		if  not target.url.endswith("index.php"):
@@ -56,4 +57,4 @@ def poc():
 
 	except KeyError as e:
 
-		print("\033[31m[!] This poc doesn't seem to work.Please try another one.\033[0m")
+		print("This poc doesn't seem to work.Please try another one.")

@@ -14,14 +14,13 @@ def cli():
 		target.update(cmdLineParser().__dict__)
 		start()
 	except requests.exceptions.InvalidSchema as e:
-		print("\033[31m[!] Please input the right url.\033[0m\n")
+		print("Please input the right url.")
 	except requests.exceptions.MissingSchema as e:
-		print("\033[31m[!] Please apply a right schema.e.g:http://www.example.com\033[0m\n")
+		print("Please apply a right schema.e.g:http://www.example.com")
 	except requests.exceptions.ConnectionError as e:
-		print("\033[31m[!] The network is busy.Connetion error!\033[0m\n")
+		print("The network is busy.Connetion error!")
 	except KeyboardInterrupt as e:
-		print("\033[31m[!] User aborted!\033[0m\n")
-
+		print("User aborted!")
 
 if __name__ == "__main__":
 	cli()
